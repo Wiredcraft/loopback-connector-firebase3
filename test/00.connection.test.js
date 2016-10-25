@@ -68,8 +68,4 @@ describe('CouchDB connector', () => {
     connector.disconnect(done);
   });
 
-  it('can connect', (done) => {
-    connector.connect(done);
-  });
-
 });
