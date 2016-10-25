@@ -1,6 +1,6 @@
 {
   "name": "loopback-connector-firebase3",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "With Firebase SDK 3.x",
   "author": {
     "name": "Wiredcraft",
