@@ -1,14 +1,11 @@
 'use strict';
 
+var path = require('path');
 var Promise = require('bluebird');
 var DataSource = require('loopback-datasource-juggler').DataSource;
 
 var config = {
-  serviceAccount: {
-    projectId: process.env.FIREBASE_PROJECT_ID,
-    privateKey: process.env.FIREBASE_PROJECT_KEY,
-    clientEmail: process.env.FIREBASE_CLIENT_EMAIL
-  },
+  serviceAccount: path.resolve(__dirname, 'serviceAccount.json'),
   databaseURL: 'https://test-79702.firebaseio.com/',
   database: 'lorem'
 };
