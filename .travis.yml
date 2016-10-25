@@ -1,0 +1,19 @@
+sudo: false
+language: node_js
+cache:
+  directories:
+    - node_modules
+notifications:
+  email: false
+branches:
+  only:
+    - master
+node_js:
+  - "6"
+  - "4"
+install:
+  - npm install
+before_script:
+  - npm prune
+script:
+  - make test-coveralls
