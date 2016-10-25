@@ -9,6 +9,7 @@
 
 /backup
 /test/debug
+/test/serviceAccount.json
 
 # Logs
 logs

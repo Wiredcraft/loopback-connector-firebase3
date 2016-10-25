@@ -1,4 +1,4 @@
-ENV = NODE_ENV=test DEBUG=
+ENV = NODE_ENV=test DEBUG=loopback:connector:*
 MOCHA = ./node_modules/.bin/_mocha
 MOCHA_OPTS = -b --timeout 50000 --reporter spec
 TESTS = test/*crud.test.js
