@@ -1,7 +1,7 @@
 ENV = NODE_ENV=test DEBUG=loopback:connector:*
 MOCHA = ./node_modules/.bin/_mocha
 MOCHA_OPTS = -b --timeout 50000 --reporter spec
-TESTS = test/*crud.test.js
+TESTS = test/*.test.js
 ISTANBUL = ./node_modules/.bin/istanbul
 COVERALLS = ./node_modules/.bin/coveralls
 
