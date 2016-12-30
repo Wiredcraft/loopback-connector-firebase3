@@ -5,7 +5,7 @@ const randexp = require('randexp').randexp;
 
 const init = require('./init');
 
-describe('CouchDB CRUD', () => {
+describe('Firebase CRUD', () => {
 
   let ds;
   let connector;
