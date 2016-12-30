@@ -13,8 +13,8 @@ node_js:
   - "4"
 install:
   - npm install
-before_script:
   - npm prune
+before_script:
   - openssl aes-256-cbc -pass "pass:${FIREBASE_ACCOUNT_PASS}" -in ./test/serviceAccount.json.enc -out ./test/serviceAccount.json -d -a
 script:
   - make test-coveralls
